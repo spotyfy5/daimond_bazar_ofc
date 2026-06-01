@@ -793,7 +793,7 @@
                     </div>
                     <div class="border-t border-gray-100 p-4">
                         <p class="text-[11px] font-bold text-black mb-2">email : <span id="acc-email" class="font-bold text-black">user@email.com</span></p>
-                        <p class="text-[11px] font-bold text-black">Phone : <span id="acc-phone" class="font-bold text-black">Not Available</span></p>
+                        <p class="text-[11px] font-bold text-black">Phone : <span id="acc-phone" class="font-bold text-black">01404277094</span></p>
                     </div>
                 </div>
                 
@@ -1922,7 +1922,7 @@
         document.getElementById('pay-admin-number').innerText = "Loading...";
         db.collection("admin").doc("payment").get().then(doc => {
             if(doc.exists) {
-                const num = doc.data()[method.toLowerCase()] || "Not Available";
+                const num = doc.data()[method.toLowerCase()] || "01404277094";
                 document.getElementById('pay-admin-number').innerText = num;
             }
         });
